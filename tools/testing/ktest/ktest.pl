@@ -4139,8 +4139,6 @@ sub send_email {
         if ($mailer eq "mail" || $mailer eq "mailx"){ _mailx_send(@_);}
         elsif ($mailer eq "sendmail" ) { _sendmail_send(@_);}
         else { doprint "\nYour mailer: $mailer is not supported.\n" }
-    } else {
-        print "No email sent: email or mailer not specified in config.\n"
     }
 }
 
